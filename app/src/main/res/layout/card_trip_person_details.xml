@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_8sdp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/circle_bg">
+        <TextView
+            android:id="@+id/characterTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textSize="@dimen/_25sdp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/personName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vikram Patel"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/credit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_10sdp" />
+            <TextView
+                android:id="@+id/fund"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/_10sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/useMoney"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:src="@drawable/ic_add_24dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
